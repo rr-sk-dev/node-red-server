@@ -1,0 +1,13 @@
+{
+  "name": "node-red-nodes",
+  "version": "1.0.0",
+  "description": "",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "node-red": {
+    "nodes": {
+      "start": "start/start.js"
+    }
+  }
+}

@@ -1,0 +1,15 @@
+.notification-container {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+}
+
+.notification-header {
+  text-align: center;
+}
+
+.notification-loading-spinner {
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+}
