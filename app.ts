@@ -3,6 +3,7 @@ import express from 'express';
 import http from 'http';
 import RED from 'node-red';
 import path from 'path';
+import { createWebSocket } from './server/socket';
 
 const app = express();
 app.use('/', express.static('public'));
@@ -37,6 +38,8 @@ const bootstrap = async () => {
   app.use(settings.httpAdminRoot as string, RED.httpAdmin);
 
   httpServer.listen(NODE_RED_PORT);
+
+  createWebSocket();
 
   await RED.start();
 };
