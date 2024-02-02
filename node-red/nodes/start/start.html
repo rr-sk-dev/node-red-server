@@ -2,7 +2,15 @@
   RED.nodes.registerType('start', {
     category: 'custom',
     color: '#b3e080',
-    defaults: {},
+    defaults: {
+      path: {
+        value: '',
+        required: true,
+        validate: function (path) {
+          return path?.startsWith('/');
+        },
+      },
+    },
     inputs: 1,
     outputs: 1,
     icon: 'font-awesome/fa-play-circle',
@@ -11,4 +19,12 @@
   });
 </script>
 
-<script type="text/html" data-template-name="start"></script>
+<script type="text/html" data-template-name="start">
+  <div class="form-row">
+    <label for="node-input-path" class="testing">
+      <i class="fa fa-tag"></i>
+      Path
+    </label>
+    <input type="text" id="node-input-path" />
+  </div>
+</script>

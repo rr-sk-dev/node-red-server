@@ -10,7 +10,7 @@ const welcomeText = `
 setTimeout(() => {
   RED.notify(welcomeText, {
     type: 'compact',
-    timeout: 1000 * 2,
+    timeout: 1500,
     modal: true,
   });
 }, 500);

@@ -22,12 +22,12 @@ const settings: LocalSettings = {
     page: {
       title: 'Node-RED',
       css: [
-        path.resolve(__dirname, './node-red/styles/node-red.css'),
         path.resolve(__dirname, './node-red/styles/custom.css'),
         path.resolve(__dirname, './node-red/styles/loading-spinner.css'),
+        path.resolve(__dirname, './node-red/styles/node-red.css'),
         path.resolve(__dirname, './node-red/nodes/resources/nodes.css'),
       ] as any,
-      scripts: path.resolve(__dirname, './node-red/scripts/notification.js'),
+      scripts: [path.resolve(__dirname, './node-red/scripts/notification.js')] as any,
     },
   },
 };
