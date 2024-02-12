@@ -8,12 +8,11 @@
   padding: 0 7rem;
 
   display: flex;
+  justify-content: center;
   align-items: center;
 }
 
 .red-ui-notification {
   width: 100%;
   border-width: 5px;
-
-  padding: 0.5rem;
 }
