@@ -1,15 +1,12 @@
+/* #### NOTIFICATIONS #### */
 .notification-container {
   display: grid;
   grid-template-rows: 1fr 1fr;
 }
 
 .notification-header {
+  margin: 0;
+  padding: 0;
+
   text-align: center;
-}
-
-.notification-loading-spinner {
-  position: relative;
-
-  display: flex;
-  justify-content: center;
 }

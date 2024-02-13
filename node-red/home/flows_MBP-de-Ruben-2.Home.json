@@ -1,1 +1,1 @@
-[{"id":"c768568416957b0b","type":"tab","label":"Flow 1","disabled":false,"info":"","env":[]},{"id":"2aae5fc6ea709b3f","type":"start","z":"c768568416957b0b","path":"/","x":90,"y":60,"wires":[[]]}]
+[{"id":"c768568416957b0b","type":"tab","label":"Flow 1","disabled":false,"info":"","env":[]},{"id":"754d5a9d3360e1f5","type":"theme","name":"Default","bgColor":"#8afff7","textColor":"#ffffff","btnColor":"#c0edc0"},{"id":"be3b28a4951e14b0","type":"start","z":"c768568416957b0b","name":"start","flowId":"/main","theme":"754d5a9d3360e1f5","x":90,"y":80,"wires":[[]]}]

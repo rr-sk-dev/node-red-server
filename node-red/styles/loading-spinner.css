@@ -1,36 +1,22 @@
 .loader {
-  width: 80px;
-  height: 45px;
-  --g1: conic-gradient(
-    from 90deg at left 3px top 3px,
-    #0000 90deg,
-    var(--red-ui-notification-border-default) 0
-  );
-  --g2: conic-gradient(
-    from -90deg at bottom 3px right 3px,
-    #0000 90deg,
-    var(--red-ui-notification-border-default) 0
-  );
-  background: var(--g1), var(--g1), var(--g1), var(--g2), var(--g2), var(--g2);
-  background-position: left, center, right;
-  background-repeat: no-repeat;
-  animation: l9 1s infinite;
+  place-self: center;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border: 3px solid rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  border-top-color: var(--red-ui-notification-border-default);
+  animation: spin 1s ease-in-out infinite;
+  -webkit-animation: spin 1s ease-in-out infinite;
 }
 
-@keyframes l9 {
-  0% {
-    background-size: 25px 50%, 25px 50%, 25px 50%;
+@keyframes spin {
+  to {
+    -webkit-transform: rotate(360deg);
   }
-  25% {
-    background-size: 25px 100%, 25px 50%, 25px 50%;
-  }
-  50% {
-    background-size: 25px 50%, 25px 100%, 25px 50%;
-  }
-  75% {
-    background-size: 25px 50%, 25px 50%, 25px 100%;
-  }
-  100% {
-    background-size: 25px 50%, 25px 50%, 25px 50%;
+}
+@-webkit-keyframes spin {
+  to {
+    -webkit-transform: rotate(360deg);
   }
 }

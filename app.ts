@@ -17,7 +17,7 @@ const settings: LocalSettings = {
   uiPort: NODE_RED_PORT,
   httpAdminRoot: '/editor',
   userDir: './node-red/home',
-  paletteCategories: ['custom'],
+  paletteCategories: ['configurations'],
   editorTheme: {
     page: {
       title: 'Node-RED',

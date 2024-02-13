@@ -1,0 +1,64 @@
+<script type="text/javascript">
+  RED.nodes.registerType('theme', {
+    category: 'config',
+    defaults: {
+      name: { value: '' },
+      bgColor: { value: '#94c1d0', required: true },
+      textColor: { value: '#ffffff', required: true },
+      btnColor: { value: '#94c1d0', required: true },
+    },
+    label: function () {
+      return this.name;
+    },
+  });
+</script>
+
+<script type="text/html" data-template-name="theme">
+  <section class="edit-panel">
+    <div class="edit-panel-title">
+      <h3>Node Settings</h3>
+      <hr />
+    </div>
+    <div class="edit-panel-content">
+      <div class="column-input">
+        <label for="node-config-input-name">
+          <i class="fa fa-tag"></i>
+          Name
+        </label>
+        <input type="text" id="node-config-input-name" />
+      </div>
+    </div>
+  </section>
+
+  <section class="edit-panel">
+    <div class="edit-panel-title">
+      <h3>Theme Configuration</h3>
+      <hr />
+    </div>
+    <div class="edit-panel-content">
+      <div class="theme-container">
+        <div class="column-input">
+          <label for="node-config-input-bgColor">
+            <i class="fa fa-tag"></i>
+            Background Color
+          </label>
+          <input type="color" id="node-config-input-bgColor" />
+        </div>
+        <div class="column-input">
+          <label for="node-config-input-textColor">
+            <i class="fa fa-tag"></i>
+            Text Color
+          </label>
+          <input type="color" id="node-config-input-textColor" />
+        </div>
+        <div class="column-input">
+          <label for="node-config-input-btnColor">
+            <i class="fa fa-tag"></i>
+            Button Color
+          </label>
+          <input type="color" id="node-config-input-btnColor" />
+        </div>
+      </div>
+    </div>
+  </section>
+</script>

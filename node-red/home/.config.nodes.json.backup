@@ -436,8 +436,7 @@
             "start": {
                 "name": "start",
                 "types": [
-                    "start",
-                    "core-start"
+                    "start"
                 ],
                 "enabled": true,
                 "local": false,
