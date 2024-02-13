@@ -41,6 +41,7 @@ div[style='width: 70%; display: inline-flex;'] {
   width: 100% !important;
 }
 
+/* #### THEME CONFIG. NODE #### */
 .theme-container {
   display: flex;
   flex-wrap: wrap;
@@ -49,4 +50,9 @@ div[style='width: 70%; display: inline-flex;'] {
 
 .theme-container .column-input {
   width: calc(50% - 5px);
+}
+
+/* #### SIMPLEMDE #### */
+.CodeMirror {
+  border-width: 2px !important;
 }

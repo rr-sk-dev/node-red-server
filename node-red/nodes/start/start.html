@@ -1,3 +1,6 @@
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/simplemde/latest/simplemde.min.css" />
+<script src="https://cdn.jsdelivr.net/simplemde/latest/simplemde.min.js"></script>
+
 <script type="text/javascript">
   RED.nodes.registerType('start', {
     category: 'configurations',
@@ -18,6 +21,7 @@
     icon: 'font-awesome/fa-play-circle',
     oneditprepare: function () {},
     oneditsave: function () {},
+    oneditcancel: function () {},
   });
 </script>
 
@@ -30,7 +34,7 @@
     <div class="edit-panel-content">
       <div class="column-input">
         <label for="node-input-name">
-          <i class="fa fa-tag"></i>
+          <i class="fa fa-info-circle"></i>
           Name
         </label>
         <input type="text" id="node-input-name" />
@@ -46,14 +50,14 @@
     <div class="edit-panel-content">
       <div class="column-input">
         <label for="node-input-flowId">
-          <i class="fa fa-tag"></i>
+          <i class="fa fa-id-card-o"></i>
           Flow ID
         </label>
         <input type="text" id="node-input-flowId" />
       </div>
       <div class="column-input">
         <label for="node-input-theme">
-          <i class="fa fa-tag"></i>
+          <i class="fa fa-paint-brush"></i>
           Theme
         </label>
         <input type="text" id="node-input-theme" />
