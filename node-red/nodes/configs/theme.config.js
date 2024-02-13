@@ -1,10 +1,10 @@
 module.exports = function (RED) {
-  function ThemeConfigNode(node) {
-    RED.nodes.createNode(this, node);
+  function ThemeConfigNode(config) {
+    RED.nodes.createNode(this, config);
 
-    this.bgColor = node.bgColor;
-    this.textColor = node.textColor;
-    this.btnColor = node.btnColor;
+    this.bgColor = config.bgColor;
+    this.textColor = config.textColor;
+    this.btnColor = config.btnColor;
   }
   RED.nodes.registerType('theme', ThemeConfigNode);
 };

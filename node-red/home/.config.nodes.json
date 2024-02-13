@@ -454,6 +454,17 @@
                 "user": false,
                 "module": "node-red-nodes",
                 "file": "/Users/ruben.rodrigues/Desktop/TheDevKoala/ChatBot/node-red-server/node_modules/node-red-nodes/configs/theme.config.js"
+            },
+            "text": {
+                "name": "text",
+                "types": [
+                    "text"
+                ],
+                "enabled": true,
+                "local": false,
+                "user": false,
+                "module": "node-red-nodes",
+                "file": "/Users/ruben.rodrigues/Desktop/TheDevKoala/ChatBot/node-red-server/node_modules/node-red-nodes/text/text.js"
             }
         }
     }
