@@ -8,7 +8,8 @@
   "node-red": {
     "nodes": {
       "start": "start/start.js",
-      "theme": "configs/theme.config.js"
+      "theme": "configs/theme.config.js",
+      "text": "text/text.js"
     }
   }
 }

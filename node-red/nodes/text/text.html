@@ -1,0 +1,52 @@
+<script type="text/javascript">
+  RED.nodes.registerType('text', {
+    category: 'custom',
+    color: '#b0e8ff',
+    defaults: {
+      name: { value: '' },
+      text: { value: '' },
+    },
+    inputs: 1,
+    outputs: 1,
+    icon: 'font-awesome/fa-book',
+    oneditprepare: function () {
+      new SimpleMDE({ element: document.getElementById('node-input-text'), forceSync: true });
+    },
+    oneditsave: function () {},
+    oneditcancel: function () {},
+  });
+</script>
+
+<script type="text/html" data-template-name="text">
+  <section class="edit-panel">
+    <div class="edit-panel-title">
+      <h3>Node Settings</h3>
+      <hr />
+    </div>
+    <div class="edit-panel-content">
+      <div class="column-input">
+        <label for="node-input-name">
+          <i class="fa fa-info-circle"></i>
+          Name
+        </label>
+        <input type="text" id="node-input-name" />
+      </div>
+    </div>
+  </section>
+
+  <section class="edit-panel">
+    <div class="edit-panel-title">
+      <h3>Node Properties</h3>
+      <hr />
+    </div>
+    <div class="edit-panel-content">
+      <div class="column-input">
+        <label for="node-input-text">
+          <i class="fa fa-book"></i>
+          Text
+        </label>
+        <textarea id="node-input-text"></textarea>
+      </div>
+    </div>
+  </section>
+</script>
