@@ -2,13 +2,13 @@
   RED.nodes.registerType('theme', {
     category: 'config',
     defaults: {
-      name: { value: '' },
+      name: { value: '', required: true },
       bgColor: { value: '#94c1d0', required: true },
       textColor: { value: '#ffffff', required: true },
       btnColor: { value: '#94c1d0', required: true },
     },
     label: function () {
-      return this.name;
+      return this.name || '<UNKNOWN>';
     },
   });
 </script>
