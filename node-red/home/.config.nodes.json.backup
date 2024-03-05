@@ -458,7 +458,7 @@
             "text": {
                 "name": "text",
                 "types": [
-                    "nr-text"
+                    "text"
                 ],
                 "enabled": true,
                 "local": false,
