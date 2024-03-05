@@ -56,3 +56,7 @@ div[style='width: 70%; display: inline-flex;'] {
 .CodeMirror {
   border-width: 2px !important;
 }
+
+.simplemde label {
+  font-weight: bold;
+}
