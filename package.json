@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "tsc && node ./dist/app.js",
-    "start:dev": "nodemon -w . --ext ts,js,html,css --exec \"ts-node app.ts\"",
+    "start": "tsc && node ./dist/src/app.js",
+    "start:dev": "nodemon -w . --ext ts,js,html,css --exec \"ts-node src/app.ts\"",
     "test": "jest"
   },
   "keywords": [],
