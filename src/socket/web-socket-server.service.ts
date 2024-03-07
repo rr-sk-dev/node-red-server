@@ -1,14 +1,20 @@
 import { IncomingMessage } from 'http';
 import { Server, WebSocket, WebSocketServer } from 'ws';
 
-let wss: Server<typeof WebSocket, typeof IncomingMessage>;
+export class WebSocketServerService {
+  private readonly wss: Server<typeof WebSocket, typeof IncomingMessage>;
 
-export const createWebSocket = () => {
-  wss = new WebSocketServer({ port: 8080 });
+  constructor(port: number) {
+    this.wss = new WebSocketServer({ port });
 
-  console.log('\n[wss] running', '\n');
+    this.wss.on('connection', this.handleConnection);
+  }
 
-  wss.on('connection', function connection(ws) {
+  send(event: string, message: string) {
+    this.wss.emit(event, message);
+  }
+
+  private handleConnection(ws: WebSocket) {
     ws.on('error', console.error);
 
     ws.on('message', function message(data) {
@@ -20,5 +26,5 @@ export const createWebSocket = () => {
     ws.on('close', (code, reason) => {
       console.log('client close: %s', { code, reason: reason.toJSON() });
     });
-  });
-};
+  }
+}

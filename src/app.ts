@@ -1,13 +1,11 @@
-import express from 'express';
-import http from 'http';
-import { NodeRedService } from './node-red.service';
+import { NodeRedServerService } from './node-red-server.service';
+import { createWebSocketServer } from './socket/web-socket-server';
 
 const bootstrap = async () => {
-  const app = express();
-  const httpServer = http.createServer(app);
+  const nodeRedServerService = new NodeRedServerService();
+  await nodeRedServerService.start();
 
-  const NodeRED = new NodeRedService();
-  await NodeRED.start(httpServer, app);
+  createWebSocketServer();
 };
 
 bootstrap();
